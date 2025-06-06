@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="sv">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Tiny tuva AB</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta property="og:title" content="Tiny tuva">
+    <meta property="og:description" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.tinytuva.se">
+    <meta property="og:image" content="https://www.tinytuva.se/sanna.jpg">
+
+    <style>
+      :root {
+        --font-serif: Seravek, 'Gill Sans Nova', Ubuntu, Calibri, 'DejaVu Sans', source-sans-pro, sans-serif;
+        --step--2: clamp(0.78rem, calc(0.77rem + 0.03vw), 0.80rem);
+        --step--1: clamp(0.94rem, calc(0.92rem + 0.11vw), 1.00rem);
+        --step-0: clamp(1.13rem, calc(1.08rem + 0.22vw), 1.25rem);
+        --step-1: clamp(1.35rem, calc(1.28rem + 0.37vw), 1.56rem);
+        --step-2: clamp(1.62rem, calc(1.50rem + 0.58vw), 1.95rem);
+        --step-3: clamp(1.94rem, calc(1.77rem + 0.87vw), 2.44rem);
+        --step-4: clamp(2.33rem, calc(2.08rem + 1.25vw), 3.05rem);
+        --step-5: clamp(2.80rem, calc(2.45rem + 1.77vw), 3.82rem);
+        --color-platinum: #e3e3e3;
+        --color-eerie-black: #222222;
+        --color-blue: #37733f;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      section.footnotes :target {
+        scroll-margin-block: 5ex;
+        animation: highlight 1.5s ease-in-out;
+      }
+
+      @keyframes highlight {
+        from {
+          background-color: #ccff9c;
+        }
+
+        to {
+          background-color: inherit;
+        }
+      }
+
+      body {
+        font: var(--step-1) /1.5 var(--font-serif);
+        background: #e6ebdf;
+        color: #000;
+      }
+
+      h1 {
+        font-size: var(--step-5);
+      }
+
+      h2 {
+        font-size: var(--step-4);
+      }
+
+      a {
+        color: var(--color-blue);
+      }
+
+      img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        color: var(--color-platinum);
+      }
+
+      .cube {
+        --width: "Covik Sans Demo", Verdana, sans-serif;
+        background: var(--color-blue);
+        width: 10rem;
+        height: 10rem;
+      }
+
+      .cube:hover {
+        cursor: grab;
+      }
+
+      img.inline-radius {
+        border-radius: 144px;
+        display: inline;
+        height: 1.4em;
+        width: auto;
+        vertical-align: bottom;
+      }
+
+
+      main {
+        max-width: 50ch;
+        margin: 0 auto;
+      }
+
+      aside {
+        font: var(--step-0) /1.5 var(--font-sans-serif);
+      }
+
+      aside h2 {
+        font: var(--step-0) /1.5 var(--font-sans-serif);
+        font-weight: bold;
+      }
+
+      video {
+        width: 75%;
+        height: auto;
+      }
+    </style>
+
+    <style media="print">
+      body {
+        font-size: var(--step-1);
+        color: black;
+        background: unset;
+      }
+
+      section {
+        border: none;
+        color: black;
+        max-width: none;
+        background: unset !important;
+      }
+
+      a {
+        text-decoration: none;
+        color: black;
+      }
+
+      a[href^="http"]:after {
+        content: ' (' attr(href) ')';
+      }
+
+      section.footnotes a[href^="#"] {
+        display: none;
+      }
+
+      img {
+        max-width: 75%;
+        margin: auto;
+      }
+    </style>
+
+    <meta name="theme-color" content="#e9fff9">
+  </head>
+
+  <body>
+    <main>
+    <article>
+      <p><img src="sanna.jpg" alt="" width="1300" height="1300" style="border-radius: 50%; width: 100%; height: auto; max-width: 10em; margin: auto;"></p>
+
+      <h1>Tiny tuva AB</h1>
+
+      <p><b>Sanna Lund</b> heter jag, Tiny tuva är namnet på mitt företag och att utbilda är min grej!</p>
+
+      <p>Jag visar dig hur du använder smarta digitala verktyg och stärker dig i din yrkesroll – oavsett om det handlar om att bli mer produktiv i ditt arbete, vässa ditt skrivande, kommunicera tydligare, skapa snygga och engagerande presentationer eller fota tjusiga bilder.</p>
+
+      <p>Du hittar mina populära onlinekurser på <a href="">Moderskeppet</a>.</p>
+
+      <p>Vill du att jag ska lära dig och dina kollegor något? Behöver du min hjälp i ett projekt? Hör av dig till <a href="">hej@tinytuva.se</a>. Jag finns i Jönköping och (förstås) på det världsomspännande internetet.</p>
+
+      <p>På <a href="">sannalund.se</a> hittar du det mesta av mitt skapande, så som <a href="">mina publicerade böcker och noveller</a>.</p>
+    </article>
+
+    <footer>
+      <p><img src="signature.png" alt="" width="315" height="167"></p>
+      <address><span lang="sv">Tiny tuva <abbr title="aktiebolag">AB</abbr></span><br>
+        <small>559514-6274</small>
+      </address>
+    </footer>
+  </main>
+  </body>
+
+</html>
