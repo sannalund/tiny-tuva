@@ -16,14 +16,7 @@
     <style>
       :root {
         --font-serif: Seravek, 'Gill Sans Nova', Ubuntu, Calibri, 'DejaVu Sans', source-sans-pro, sans-serif;
-        --step--2: clamp(0.78rem, calc(0.77rem + 0.03vw), 0.80rem);
-        --step--1: clamp(0.94rem, calc(0.92rem + 0.11vw), 1.00rem);
-        --step-0: clamp(1.13rem, calc(1.08rem + 0.22vw), 1.25rem);
-        --step-1: clamp(1.35rem, calc(1.28rem + 0.37vw), 1.56rem);
-        --step-2: clamp(1.62rem, calc(1.50rem + 0.58vw), 1.95rem);
-        --step-3: clamp(1.94rem, calc(1.77rem + 0.87vw), 2.44rem);
-        --step-4: clamp(2.33rem, calc(2.08rem + 1.25vw), 3.05rem);
-        --step-5: clamp(2.80rem, calc(2.45rem + 1.77vw), 3.82rem);
+        --step-0: clamp(1.0625rem, 1.0408rem + 0.1087vw, 1.125rem);
         --color-platinum: #e3e3e3;
         --color-eerie-black: #222222;
         --color-blue: #37733f;
@@ -49,9 +42,10 @@
       }
 
       body {
-        font: var(--step-1) /1.5 var(--font-serif);
+        font: var(--step-0) /1.5 var(--font-serif);
         background: #e6ebdf;
         color: #000;
+        margin: 1em;
       }
 
       h1 {
@@ -71,6 +65,17 @@
         height: auto;
         display: block;
         color: var(--color-platinum);
+      }
+
+      .image-step-1 {
+        width: 20em;
+        height: auto;
+        margin: auto;
+      }
+
+      .image-step-2 {
+        width: 8em;
+        height: auto;
       }
 
       .cube {
@@ -115,7 +120,7 @@
 
     <style media="print">
       body {
-        font-size: var(--step-1);
+        font-size: var(--step-0);
         color: black;
         background: unset;
       }
@@ -154,7 +159,7 @@
     <article>
       <p><img src="sanna.jpg" alt="" width="1300" height="1300" style="border-radius: 50%; width: 100%; height: auto; max-width: 10em; margin: auto;"></p>
 
-      <h1><img src="tiny-tuva.png" alt="Tiny tuva" width="1770" height="458"></h1>
+      <h1><img src="tiny-tuva.png" alt="Tiny tuva" width="1770" height="458" class="image-step-1"></h1>
 
       <p><b>Sanna Lund</b> heter jag, Tiny tuva är namnet på mitt företag och att utbilda är min grej!</p>
 
@@ -168,7 +173,7 @@
     </article>
 
     <footer>
-      <p><img src="sanna-lund.png" alt="Sanna Lund" width="1464" height="251"></p>
+      <p><img src="sanna-lund.png" alt="Sanna Lund" width="1464" height="251" class="image-step-2"></p>
       <address><span lang="sv">Tiny tuva <abbr title="aktiebolag">AB</abbr></span><br>
         <small>559514-6274</small>
       </address>
